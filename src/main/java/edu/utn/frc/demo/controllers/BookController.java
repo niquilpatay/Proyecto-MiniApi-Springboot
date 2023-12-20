@@ -55,13 +55,6 @@ public class BookController {
         return bookService.getBookById(id);
     }
 
-    /*Sobreescribir método getBook por id (prueba)
-    @GetMapping("/book/{id}")
-    Book getBook(@PathVariable Integer id, @RequestHeader(required = false) String username){
-        log.info("request from user: {}", username);
-        return bookService.getBookById(id);
-    }*/
-
     //Método GET para obtener libro por título
     //RequestParam: espera un parámetro title desde la solicitud HTTP
     @GetMapping("/book")

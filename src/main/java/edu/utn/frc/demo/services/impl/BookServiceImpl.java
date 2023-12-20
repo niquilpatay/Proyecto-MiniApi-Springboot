@@ -22,7 +22,7 @@ public class BookServiceImpl implements BookService{
     }
 
     //Método para obtener libro por ID
-    //Utiliza metodo get de ConcurrentHashMap
+    //Utiliza método get de ConcurrentHashMap
     @Override
     public Book getBookById(Integer id){
         return bookLibrary.get(id);
